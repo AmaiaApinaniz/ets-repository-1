@@ -122,6 +122,7 @@ return
 									<testItemType ref="EIDf0edc596-49d2-48d6-a1a1-1ac581dcde0a"/>
 									<translationTemplates>
 										<translationTemplate ref="TR.spatialScopeCodeListMissing"/>
+										<translationTemplate ref="TR.spatialScopeCitationMissing"/>
 										<translationTemplate ref="TR.recordsWithErrors"/>
 									</translationTemplates>
 								</TestAssertion>

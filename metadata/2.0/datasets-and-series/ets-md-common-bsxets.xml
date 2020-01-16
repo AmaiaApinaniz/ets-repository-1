@@ -5,18 +5,18 @@
 	<itemHash>bQ==</itemHash>
 	<remoteResource>https://github.com/inspire-eu-validation/ets-repository/tree/master/metadata/2.0</remoteResource>
 	<localPath>/auto</localPath>
-	<label>Monitoring Requirements for INSPIRE metadata</label>
+	<label>Conformance Class 2b: Monitoring metadata for data sets and data set series</label>
 	<description>
 		<![CDATA[<br/><br/><b>This is a draft version. It has limitations and is expected to contain errors.</b> Please report any issues or problems <a href="https://github.com/inspire-eu-validation/community/wiki/Your-feedback" target="_blank">in GitHub</a>.<br/><br/>
 Known limitations are documented in the description of the applicable test case or test assertion.<br/><br/>
-Source: <a href="http://inspire.ec.europa.eu/id/ats/metadata/2.0/monitoring" target="_blank">Monitoring Requirements for INSPIRE metadata</a><br/><br/>]]>
+Source: <a href="http://inspire.ec.europa.eu/id/ats/metadata/2.0/monitoring" target="_blank">Conformance Class 2b: Monitoring metadata for data sets and data set series</a><br/><br/>]]>
 	</description>
 	<reference>../../../inspire-md-bsxets.xq</reference>
 		<version>0.1.0</version>
 	<author>Consortium Bilbomatica, Guadaltel y Geograma</author>
 	<creationDate>2020-01-14T00:00:00Z</creationDate>
 	<lastEditor>Consortium Bilbomatica, Guadaltel y Geograma</lastEditor>
-	<lastUpdateDate>2020-01-14T00:00:00Z</lastUpdateDate>
+	<lastUpdateDate>2020-01-16T18:20:00Z</lastUpdateDate>
 	<tags>
 		<tag ref="EIDc6567beb-fc33-4f2e-865d-0c3ee5b3d1ae"/>
 	</tags>

@@ -16,7 +16,7 @@ Source: <a href="http://inspire.ec.europa.eu/id/ats/metadata/2.0/monitoring" tar
 	<author>Consortium Bilbomatica, Guadaltel y Geograma</author>
 	<creationDate>2020-01-14T00:00:00Z</creationDate>
 	<lastEditor>Consortium Bilbomatica, Guadaltel y Geograma</lastEditor>
-	<lastUpdateDate>2020-01-16T18:20:00Z</lastUpdateDate>
+	<lastUpdateDate>2020-01-17T12:00:00Z</lastUpdateDate>
 	<tags>
 		<tag ref="EIDc6567beb-fc33-4f2e-865d-0c3ee5b3d1ae"/>
 	</tags>
@@ -106,20 +106,22 @@ let $messages :=
 		return $x
 	return
 	if (count($keywordsAnchor) = 0 and count($keywordsCharacterString) = 0) then
-		local:addMessage('TR.spatialScopeCodeListMissing', map { 'filename': local:filename($record), 'id': $rid })
-	else if (count($validThesaurusNameTitle) = 0) then
+		local:addMessage('TR.manualCheckSpatialScope', map { 'filename': local:filename($record), 'id': $rid })
+	else if ((count($keywordsAnchor) != 0 or count($keywordsCharacterString) != 0) and (count($validThesaurusNameTitle) = 0)) then
 		local:addMessage('TR.spatialScopeCitationMissing', map { 'filename': local:filename($record), 'id': $rid })
 	else()
 	)[position() le $limitErrors]
 return
-(if ($messages) then 'FAILED' else 'PASSED',
+(if ($messages/@ref = 'TR.manualCheckSpatialScope') then 'PASSED_MANUAL' 
+ else if ($messages/@ref = 'TR.spatialScopeCitationMissing') then 'FAILED'
+ else 'PASSED',
  local:error-statistics('TR.recordsWithErrors', count(fn:distinct-values($messages//etf:argument[@token='id']/text()))),
  $messages)
 							  																																																						
 									</expression>
 									<testItemType ref="EIDf0edc596-49d2-48d6-a1a1-1ac581dcde0a"/>
 									<translationTemplates>
-										<translationTemplate ref="TR.spatialScopeCodeListMissing"/>
+										<translationTemplate ref="TR.manualCheckSpatialScope"/>
 										<translationTemplate ref="TR.spatialScopeCitationMissing"/>
 										<translationTemplate ref="TR.recordsWithErrors"/>
 									</translationTemplates>

@@ -7,16 +7,16 @@
 	<localPath>/auto</localPath>
 	<label>Conformance Class 2b: Monitoring metadata for data sets and data set series</label>
 	<description>
-		<![CDATA[<br/><br/><b>This is a draft version. It has limitations and is expected to contain errors.</b> Please report any issues or problems <a href="https://github.com/inspire-eu-validation/community/wiki/Your-feedback" target="_blank">in GitHub</a>.<br/><br/>
+		<![CDATA[This test suite examines metadata records against the requirements for metadata in INSPIRE.<br/><br/>Please report any issues or problems <a href="https://github.com/inspire-eu-validation/community/wiki/Your-feedback" target="_blank">in GitHub</a>.<br/><br/>
 Known limitations are documented in the description of the applicable test case or test assertion.<br/><br/>
 Source: <a href="http://inspire.ec.europa.eu/id/ats/metadata/2.0/monitoring" target="_blank">Conformance Class 2b: Monitoring metadata for data sets and data set series</a><br/><br/>]]>
 	</description>
 	<reference>../../../inspire-md-bsxets.xq</reference>
-		<version>0.1.0</version>
+		<version>1.0.0</version>
 	<author>Consortium Bilbomatica, Guadaltel y Geograma</author>
 	<creationDate>2020-01-14T00:00:00Z</creationDate>
 	<lastEditor>Consortium Bilbomatica, Guadaltel y Geograma</lastEditor>
-	<lastUpdateDate>2020-01-17T12:00:00Z</lastUpdateDate>
+	<lastUpdateDate>2020-01-17T12:30:00Z</lastUpdateDate>
 	<tags>
 		<tag ref="EIDc6567beb-fc33-4f2e-865d-0c3ee5b3d1ae"/>
 	</tags>
@@ -65,7 +65,7 @@ Source: <a href="http://inspire.ec.europa.eu/id/ats/metadata/2.0/monitoring" tar
 							<testAssertions>
 								<TestAssertion id="EIDa09768e4-1fab-48b4-ac7c-3dc0af7e8649">
 									<label>M.1: Spatial scope code list</label>
-									<description><![CDATA[<p>Test that the spatial scope covered by the data set, data series or service is provided.</p>
+									<description><![CDATA[<p>Test that the spatial scope covered by the data set or data set series is provided.</p>
 									<p>More information: <a href="http://inspire.ec.europa.eu/id/ats/metadata/2.0/monitoring/spatial-scope" target="_blank">Spatial Scope Code List</a></p>]]></description>
 									<parent ref="EID2a595fad-2019-400a-8079-5759231c52c1"/>
 									<expectedResult>NOT_APPLICABLE</expectedResult>

@@ -43,7 +43,7 @@ Source: <a href="http://inspire.ec.europa.eu/id/ats/metadata/2.0/monitoring" tar
 		<testObjectType ref="EID5a60dded-0cb0-4977-9b06-16c6c2321d2e"/>
 	</supportedTestObjectTypes>
 	<dependencies>
-		<executableTestSuite ref="EID59692c11-df86-49ad-be7f-94a1e1ddd8da"/>
+		<executableTestSuite ref="EIDe4a95862-9cc9-436b-9fdd-a0115d342350"/>
 	</dependencies>
 	<testModules>
 		<TestModule id="EID105d4019-8fc7-4a2a-a34b-ffed01b17252">

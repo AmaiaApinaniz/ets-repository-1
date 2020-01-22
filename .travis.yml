@@ -12,4 +12,3 @@ cache:
 
 script:
   - ./gradlew test
- if: branch = master
